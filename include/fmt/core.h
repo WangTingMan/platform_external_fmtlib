@@ -205,6 +205,14 @@
     FMT_INLINE_NAMESPACE v7 {
 #endif
 
+#ifdef _MSC_VER
+#ifdef FMTLIB_EXPORTS
+#define FMT_EXPORT
+#else
+#define  FMT_SHARED
+#endif
+#endif
+
 #if !defined(FMT_HEADER_ONLY) && defined(_WIN32)
 #  define FMT_CLASS_API FMT_SUPPRESS_MSC_WARNING(4275)
 #  ifdef FMT_EXPORT
