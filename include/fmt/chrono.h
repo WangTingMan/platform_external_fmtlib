@@ -298,7 +298,8 @@ inline std::tm localtime(std::time_t time) {
 
     bool run() {
       using namespace fmt::detail;
-      return handle(localtime_r(&time_, &tm_));
+      localtime_r( &time_, &tm_ );
+      return handle( detail::null<>());
     }
 
     bool handle(std::tm* tm) { return tm != nullptr; }
