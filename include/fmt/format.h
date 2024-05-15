@@ -4555,7 +4555,7 @@ FMT_END_NAMESPACE
 #  define FMT_FUNC inline
 #  include "format-inl.h"
 #else
-#  define FMT_FUNC
+#  define FMT_FUNC FMT_API
 #endif
 
 #endif  // FMT_FORMAT_H_

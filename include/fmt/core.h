@@ -193,7 +193,7 @@
 
 #ifdef _MSC_VER
 #ifdef FMTLIB_EXPORTS
-#define FMT_EXPORT
+#define FMT_LIB_EXPORT
 #else
 #define  FMT_SHARED
 #endif
